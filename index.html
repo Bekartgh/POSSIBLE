@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Possible Energy Limited</title>
+<style>
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+header {
+    background-color: #0a1f44;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+nav {
+    margin-top: 10px;
+}
+nav a {
+    margin: 0 15px;
+    font-weight: bold;
+    color: #fff;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #f0a500;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 120px 20px;
+    text-align: center;
+}
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* CTA Button */
+.cta {
+    display: inline-block;
+    background-color: #f0a500;
+    color: #fff;
+    padding: 15px 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+.cta:hover {
+    background-color: #e59400;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+}
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    color: #0a1f44;
+    margin-bottom: 40px;
+}
+
+/* Cards / Services */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+.card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.card h3 {
+    color: #0a1f44;
+    margin-bottom: 15px;
+}
+
+/* About Section */
+.about {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Images & Videos */
+img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+video {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #0a1f44;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+}
+
+/* Simple Scroll Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+</style>
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+    <h1>Possible Energy Limited</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#agriculture">Agriculture</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h2>Powering Industries & Driving Agricultural Growth</h2>
+    <p>Providing petroleum products, heavy-duty equipment, haulage services, lubricant oils, and mechanized agricultural solutions across Ghana and beyond.</p>
+    <a href="#contact" class="cta">Get In Touch</a>
+</section>
+
+<!-- About Section -->
+<section id="about">
+    <div class="about fade-in">
+        <h2 class="section-title">About Us</h2>
+        <p>
+            Possible Energy Limited is a trusted provider of energy, logistics, and agricultural solutions.
+            We deliver high-quality petroleum products, heavy machinery, and mechanized combine harvesting services
+            with a commitment to safety, innovation, and sustainability.
+        </p>
+        <a href="#services" class="cta">See Our Services</a>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services fade-in">
+        <div class="card">
+            <h3>Petroleum Products & Services</h3>
+            <p>Diesel, petrol, bulk fuel distribution, and on-site delivery services.</p>
+            <a href="#contact" class="cta">Request Service</a>
+        </div>
+        <div class="card">
+            <h3>Heavy Duty Equipment Supply</h3>
+            <p>Excavators, bulldozers, loaders, and construction machinery supply and leasing.</p>
+            <a href="#contact" class="cta">Request Equipment</a>
+        </div>
+        <div class="card">
+            <h3>Lubricant Oils</h3>
+            <p>Industrial lubricants, engine oils, hydraulic oils, and transmission fluids.</p>
+            <a href="#contact" class="cta">Order Lubricants</a>
+        </div>
+        <div class="card">
+            <h3>Haulage & Logistics</h3>
+            <p>Fuel haulage, equipment transportation, and bulk cargo delivery solutions.</p>
+            <a href="#contact" class="cta">Get a Quote</a>
+        </div>
+    </div>
+</section>
+
+<!-- Agriculture Division -->
+<section id="agriculture">
+    <h2 class="section-title">Agriculture Division</h2>
+    <div class="services fade-in">
+        <div class="card">
+            <h3>Combine Harvesting Services</h3>
+            <p>Mechanized harvesting solutions for large-scale farms, increasing efficiency and productivity.</p>
+            <video controls>
+                <source src="videos/agriculture.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <a href="#contact" class="cta">Book Harvesting</a>
+        </div>
+        <div class="card">
+            <h3>Agricultural Machinery</h3>
+            <p>Supply and maintenance of tractors, ploughs, and other mechanized farm equipment.</p>
+            <img src="images/tractor.jpg" alt="Agricultural Equipment">
+            <a href="#contact" class="cta">Request Equipment</a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="about fade-in">
+        <h2 class="section-title">Contact Us</h2>
+        <p>Email: info@possibleenergy.com</p>
+        <p>Phone: +233 XXX XXX XXX</p>
+        <p>Location: Ghana</p>
+        <a href="mailto:info@possibleenergy.com" class="cta">Email Us Now</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Possible Energy Limited. All Rights Reserved.</p>
+</footer>
+
+<!-- Scroll Animation Script -->
+<script>
+const faders = document.querySelectorAll('.fade-in');
+window.addEventListener('scroll', () => {
+  faders.forEach(fader => {
+    const rect = fader.getBoundingClientRect();
+    if(rect.top < window.innerHeight - 50) {
+      fader.classList.add('visible');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
